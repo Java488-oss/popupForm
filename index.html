@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Popup Form</title>
+</head>
+<body>
+
+  <button id="button">Показать форму</button>
+
+<div class="popup active">
+  <div class="popup__container">
+    <div class="popup__wrapper">
+      <p class="d-flex justify-content-end js-close-popup pointer">&#10008;</p>
+      <div id="blablabla">
+        <form role="form" action="/requestFine" autocomplete="off" method="POST">
+          <label>Ім'я:</label>
+          <input type="text" name="nameReq">
+          <label>Прізвище:</label>
+          <input type="text" name="lastNameReq">
+          <label>Телефон:</label>
+          <input type="text" name="telReq">
+          <label>Опис:</label>
+          <input type="text" name="textReq">
+          <button type="submit" class="btn btn-success">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
